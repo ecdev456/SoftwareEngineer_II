@@ -325,7 +325,16 @@ public class Controller {
             default:
                 break;
         }
-
+        
+        //A CheckWin can be set here
+        user.CheckMath();
+        boolean result;
+        result = user.CheckWin();
+        if(result == true)
+        {
+        	System.out.println("You WON!");
+        }
+        //System.out.println("End of the action");
     }
 
 }

@@ -19,12 +19,12 @@ public class Model {
 				{ 5,1,5,2,6 },
 				{ 2,9,6,6,7 },
 				{ 2,6,5,2,4 }
-			};//rullo grid
-	public static int hAct[] = {0,0,0,0,0}; //set to not finished
-	public static int vAct[]= {0,0,0,0,0}; //set to not finished
+			};
+	 static int hAct[] = {0,0,0,0,0}; //set to not finished
+	 static int vAct[]= {0,0,0,0,0}; //set to not finished
 	
-	public static int hSum[] = {13,16,12,23,02};
-	public static int vSum[] = {9,17,13,12,15};
+	 static int hSum[] = {13,16,12,23,02};
+	 static int vSum[] = {9,17,13,12,15};
 	
 	private static boolean HCheck[]; //size 5, boolean array where each is assigned true or false if valid mathematics for pertaining row.
 	private static boolean VCheck[]; //size 5, boolean array where each is assigned true or false if valid mathematics for pertaining column.
@@ -44,7 +44,6 @@ public class Model {
 	
 	public static void CheckMath()
 	{
-		System.out.println("Inside Check Math");
 		//Horizontal math checking.  Seperate 2-d array checking active/non-active values
 		//active values will be added and checked to the Final sum of that Row.
 		//Non-active will not be added.

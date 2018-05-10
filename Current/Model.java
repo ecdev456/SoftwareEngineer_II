@@ -3,7 +3,15 @@ package ecdev456;
 //Model.hAct[]
 		
 public class Model {
-	int actNum[][]; // 5x5 Grid, Checking active #'s
+	//All values are active, then turned off when clicked on (following game rules)
+	public static final int actNum[][] =
+		{
+			{ 1,1,1,1,1 },
+			{ 1,1,1,1,1 },
+			{ 1,1,1,1,1 },
+			{ 1,1,1,1,1 },
+			{ 1,1,1,1,1 }	
+		};
 	int rulloGrid[][]; //5x5 official grid
 	
 	public static final int hAct[] = {0,0,0,0,0}; //set to not finished
@@ -15,7 +23,9 @@ public class Model {
 	private boolean HCheck[]; //size 5, boolean array where each is assigned true or false if valid mathematics for pertaining row.
 	private boolean VCheck[]; //size 5, boolean array where each is assigned true or false if valid mathematics for pertaining column.
 	
-	Model()	//initialize values to false, when new object made
+	public static int CheckActive(int x, int y) {return actNum[x][y];}//getter
+	public static void SetActive(int x, int y, int act) {actNum[x][y] = act;} //Setting active or Not Active
+	public Model()	//initialize values to false, when new object made
 	{
 		for(int i=0; i < 5; i++)
 		{

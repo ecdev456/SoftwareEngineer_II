@@ -1,6 +1,6 @@
-package sample;
+package application;
 
-
+import ecdev456.Model;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -13,31 +13,7 @@ import javafx.scene.shape.Circle;
 
 public class Controller {
 
-    int c00 = 0;
-    int c01 = 0;
-    int c02 = 0;
-    int c03 = 0;
-    int c04 = 0;
-    int c10 = 0;
-    int c11 = 0;
-    int c12 = 0;
-    int c13 = 0;
-    int c14 = 0;
-    int c20 = 0;
-    int c21 = 0;
-    int c22 = 0;
-    int c23 = 0;
-    int c24 = 0;
-    int c30 = 0;
-    int c31 = 0;
-    int c32 = 0;
-    int c33 = 0;
-    int c34 = 0;
-    int c40 = 0;
-    int c41 = 0;
-    int c42 = 0;
-    int c43 = 0;
-    int c44 = 0;
+	static Model user;
     //@FXML
     public void onClick(MouseEvent e)
     {
@@ -45,303 +21,305 @@ public class Controller {
         String name = c.getId();
         switch(name){
             case "circle00":
-                if(c00 == 0)
+                if(user.CheckActive(0,0) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c00 = 1;
+                    user.SetActive(0, 0, 0);// making it inactive
+                    System.out.println(user.CheckActive(0,0));
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c00 = 0;
+                    user.SetActive(0, 0, 1);// making it inactive
+                  System.out.println(user.CheckActive(0,0));
                 }
                 break;
             case "circle01":
-                if(c01 == 0)
+                if(user.CheckActive(0,1) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c01 = 1;
+                    user.SetActive(0, 1, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c01 = 0;
+                    user.SetActive(0, 1, 1);
                 }
                 break;
             case "circle02":
-                if(c02 == 0)
+                if(user.CheckActive(0,2) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c02 = 1;
+                    user.SetActive(0, 2, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c02 = 0;
+                    user.SetActive(0, 2, 1);
                 }
                 break;
             case "circle03":
-                if(c03 == 0)
+                if(user.CheckActive(0,3) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c03 = 1;
+                    user.SetActive(0, 3, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c03 = 0;
+                    user.SetActive(0, 3, 1);
                 }
                 break;
             case "circle04":
-                if(c04 == 0)
+                if(user.CheckActive(0,4) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c04 = 1;
+                    user.SetActive(0, 4, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c04 = 0;
+                    user.SetActive(0, 4, 1);
                 }
                 break;
             case "circle10":
-                if(c10 == 0)
+                if(user.CheckActive(1,0) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c10 = 1;
+                    user.SetActive(1, 0, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c10 = 0;
+                    user.SetActive(1, 0, 1);
                 }
                 break;
             case "circle11":
-                if(c11 == 0)
+                if(user.CheckActive(1,1) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c11 = 1;
+                    user.SetActive(1, 1, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c11 = 0;
+                    user.SetActive(1, 1, 1);
                 }
                 break;
             case "circle12":
-                if(c12 == 0)
+                if(user.CheckActive(1,2) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c12 = 1;
+                    user.SetActive(1, 2, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c12 = 0;
+                    user.SetActive(1, 2, 1);
                 }
                 break;
             case "circle13":
-                if(c13 == 0)
+                if(user.CheckActive(1,3) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c13 = 1;
+                    user.SetActive(1, 3, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c13 = 0;
+                    user.SetActive(1, 3, 1);
                 }
                 break;
             case "circle14":
-                if(c14 == 0)
+                if(user.CheckActive(1,4) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c14 = 1;
+                    user.SetActive(1, 4, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c14 = 0;
+                    user.SetActive(1, 4, 1);
                 }
                 break;
             case "circle20":
-                if(c20 == 0)
+                if(user.CheckActive(2,0) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c20 = 1;
+                    user.SetActive(2, 0, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c20 = 0;
+                    user.SetActive(2, 0, 1);
                 }
                 break;
             case "circle21":
-                if(c21 == 0)
+                if(user.CheckActive(2,1) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c21 = 1;
+                    user.SetActive(2, 1, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c21 = 0;
+                    user.SetActive(2, 1, 1);
                 }
                 break;
             case "circle22":
-                if(c22 == 0)
+                if(user.CheckActive(2,2) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c22 = 1;
+                    user.SetActive(2, 2, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c22 = 0;
+                    user.SetActive(2, 2, 1);
                 }
                 break;
             case "circle23":
-                if(c23 == 0)
+                if(user.CheckActive(2,3) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c23 = 1;
+                    user.SetActive(2, 3, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c23 = 0;
+                    user.SetActive(2, 3, 1);
                 }
                 break;
             case "circle24":
-                if(c24 == 0)
+                if(user.CheckActive(2,4) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c24 = 1;
+                    user.SetActive(2, 4, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c24 = 0;
+                    user.SetActive(2, 4, 1);
                 }
                 break;
             case "circle30":
-                if(c30 == 0)
+                if(user.CheckActive(3,0) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c30 = 1;
+                    user.SetActive(3, 0, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c30 = 0;
+                    user.SetActive(3, 0, 1);
                 }
                 break;
             case "circle31":
-                if(c31 == 0)
+                if(user.CheckActive(3,1) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c31 = 1;
+                    user.SetActive(3, 1, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c31 = 0;
+                    user.SetActive(3, 1, 1);
                 }
                 break;
             case "circle32":
-                if(c32 == 0)
+                if(user.CheckActive(3,2) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c32 = 1;
+                    user.SetActive(3, 2, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c32 = 0;
+                    user.SetActive(3, 2, 1);
                 }
                 break;
             case "circle33":
-                if(c33 == 0)
+                if(user.CheckActive(3,3) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c33 = 1;
+                    user.SetActive(3, 3, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c33 = 0;
+                    user.SetActive(3, 3, 1);
                 }
                 break;
             case "circle34":
-                if(c34 == 0)
+                if(user.CheckActive(3,4) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c34 = 1;
+                    user.SetActive(3, 4, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c34 = 0;
+                    user.SetActive(3, 4, 1);
                 }
                 break;
             case "circle40":
-                if(c40 == 0)
+                if(user.CheckActive(4,0) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c40 = 1;
+                    user.SetActive(4, 0, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c40 = 0;
+                    user.SetActive(4, 0, 1);
                 }
                 break;
             case "circle41":
-                if(c41 == 0)
+                if(user.CheckActive(4,1) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c41 = 1;
+                    user.SetActive(4, 1, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c41 = 0;
+                    user.SetActive(4, 1, 1);
                 }
                 break;
             case "circle42":
-                if(c42 == 0)
+                if(user.CheckActive(4,2) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c42 = 1;
+                    user.SetActive(4, 2, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c42 = 0;
+                    user.SetActive(4, 2, 1);
                 }
                 break;
             case "circle43":
-                if(c43 == 0)
+                if(user.CheckActive(4,3) == 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c43 = 1;
+                    user.SetActive(4, 3, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c43 = 0;
+                    user.SetActive(4, 3, 1);
                 }
                 break;
             case "circle44":
-                if(c44 == 0)
+                if(user.CheckActive(4, 4)== 1)
                 {
                     c.setFill(Color.YELLOW);
-                    c44 = 1;
+                    user.SetActive(4, 4, 0);
                 }
                 else
                 {
                     c.setFill(Color.DODGERBLUE);
-                    c44 = 0;
+                    user.SetActive(4, 4, 1);
                 }
                 break;
             default:

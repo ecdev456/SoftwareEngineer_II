@@ -8,11 +8,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -34,259 +36,309 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Circle fx:id="circle21" fill="DODGERBLUE" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.rowIndex="4">
+      <Circle fx:id="circle21" fill="DODGERBLUE" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.rowIndex="4">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle11" fill="DODGERBLUE" layoutX="229.0" layoutY="213.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.rowIndex="3">
+      <Circle fx:id="circle11" fill="DODGERBLUE" layoutX="229.0" layoutY="213.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.rowIndex="3">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle12" fill="DODGERBLUE" layoutX="229.0" layoutY="168.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.rowIndex="3">
+      <Circle fx:id="circle12" fill="DODGERBLUE" layoutX="229.0" layoutY="168.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.rowIndex="3">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle22" fill="DODGERBLUE" layoutX="296.0" layoutY="168.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.rowIndex="4">
+      <Circle fx:id="circle22" fill="DODGERBLUE" layoutX="296.0" layoutY="168.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.rowIndex="4">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle31" fill="DODGERBLUE" layoutX="296.0" layoutY="168.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.rowIndex="5">
+      <Circle fx:id="circle31" fill="DODGERBLUE" layoutX="296.0" layoutY="168.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.rowIndex="5">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle32" fill="DODGERBLUE" layoutX="229.0" layoutY="213.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.rowIndex="5">
+      <Circle fx:id="circle32" fill="DODGERBLUE" layoutX="229.0" layoutY="213.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.rowIndex="5">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle id="circle01" fx:id="circle01" accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="296.0" layoutY="257.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.rowIndex="2">
+      <Circle id="circle01" fx:id="circle01" accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="296.0" layoutY="257.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.rowIndex="2">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle id="circle00" fx:id="circle00" accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="296.0" layoutY="168.0" onMouseClicked="#onClick" pickOnBounds="true" radius="20.0" stroke="BLACK" GridPane.columnIndex="3" GridPane.rowIndex="2">
+      <Circle id="circle00" fx:id="circle00" accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="296.0" layoutY="168.0" onMouseClicked="#onClick" pickOnBounds="true" radius="20.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.rowIndex="2">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle10" fill="DODGERBLUE" layoutX="229.0" layoutY="257.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="3" GridPane.rowIndex="3">
+      <Circle fx:id="circle10" fill="DODGERBLUE" layoutX="229.0" layoutY="257.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.rowIndex="3">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle20" fill="DODGERBLUE" layoutX="229.0" layoutY="213.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="3" GridPane.rowIndex="4">
+      <Circle fx:id="circle20" fill="DODGERBLUE" layoutX="229.0" layoutY="213.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.rowIndex="4">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle30" fill="DODGERBLUE" layoutX="229.0" layoutY="213.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="3" GridPane.rowIndex="5">
+      <Circle fx:id="circle30" fill="DODGERBLUE" layoutX="229.0" layoutY="213.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.rowIndex="5">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle02" fill="DODGERBLUE" layoutX="296.0" layoutY="168.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.rowIndex="2">
+      <Circle fx:id="circle02" fill="DODGERBLUE" layoutX="296.0" layoutY="168.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.rowIndex="2">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle40" fill="DODGERBLUE" layoutX="163.0" layoutY="168.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="3" GridPane.rowIndex="6">
+      <Circle fx:id="circle40" fill="DODGERBLUE" layoutX="163.0" layoutY="168.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.rowIndex="6">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle41" fill="DODGERBLUE" layoutX="296.0" layoutY="168.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.rowIndex="6">
+      <Circle fx:id="circle41" fill="DODGERBLUE" layoutX="296.0" layoutY="168.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.rowIndex="6">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle42" fill="DODGERBLUE" layoutX="229.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.rowIndex="6">
+      <Circle fx:id="circle42" fill="DODGERBLUE" layoutX="229.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.rowIndex="6">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle03" fill="DODGERBLUE" layoutX="163.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.rowIndex="2">
+      <Circle fx:id="circle03" fill="DODGERBLUE" layoutX="163.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.rowIndex="2">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle13" fill="DODGERBLUE" layoutX="163.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.rowIndex="3">
+      <Circle fx:id="circle13" fill="DODGERBLUE" layoutX="163.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.rowIndex="3">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle23" fill="DODGERBLUE" layoutX="163.0" layoutY="213.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.rowIndex="4">
+      <Circle fx:id="circle23" fill="DODGERBLUE" layoutX="163.0" layoutY="213.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.rowIndex="4">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle33" fill="DODGERBLUE" layoutX="296.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.rowIndex="5">
+      <Circle fx:id="circle33" fill="DODGERBLUE" layoutX="296.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.rowIndex="5">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle43" fill="DODGERBLUE" layoutX="163.0" layoutY="257.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.rowIndex="6">
+      <Circle fx:id="circle43" fill="DODGERBLUE" layoutX="163.0" layoutY="257.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.rowIndex="6">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle04" fill="DODGERBLUE" layoutX="296.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.rowIndex="2">
+      <Circle fx:id="circle04" fill="DODGERBLUE" layoutX="296.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="8" GridPane.rowIndex="2">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle14" fill="DODGERBLUE" layoutX="296.0" layoutY="301.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.rowIndex="3">
+      <Circle fx:id="circle14" fill="DODGERBLUE" layoutX="296.0" layoutY="301.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="8" GridPane.rowIndex="3">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle24" fill="DODGERBLUE" layoutX="229.0" layoutY="301.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.rowIndex="4">
+      <Circle fx:id="circle24" fill="DODGERBLUE" layoutX="229.0" layoutY="301.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="8" GridPane.rowIndex="4">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle34" fill="DODGERBLUE" layoutX="363.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.rowIndex="5">
+      <Circle fx:id="circle34" fill="DODGERBLUE" layoutX="363.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="8" GridPane.rowIndex="5">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Circle fx:id="circle44" fill="DODGERBLUE" layoutX="363.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.rowIndex="6">
+      <Circle fx:id="circle44" fill="DODGERBLUE" layoutX="363.0" layoutY="123.0" onMouseClicked="#onClick" radius="20.0" stroke="BLACK" GridPane.columnIndex="8" GridPane.rowIndex="6">
          <GridPane.margin>
-            <Insets left="15.0" />
+            <Insets left="3.0" />
          </GridPane.margin>
       </Circle>
-      <Text boundsType="LOGICAL_VERTICAL_CENTER" scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="2">
+      <Text boundsType="LOGICAL_VERTICAL_CENTER" scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="9.96875" GridPane.columnIndex="4" GridPane.rowIndex="2">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text boundsType="LOGICAL_VERTICAL_CENTER" layoutX="174.0" layoutY="127.0" scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="4" GridPane.rowIndex="2">
+      <Text boundsType="LOGICAL_VERTICAL_CENTER" layoutX="174.0" layoutY="127.0" scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="5" GridPane.rowIndex="2">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" GridPane.columnIndex="5" GridPane.rowIndex="2">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" GridPane.columnIndex="6" GridPane.rowIndex="2">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" GridPane.columnIndex="6" GridPane.rowIndex="2">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" GridPane.columnIndex="7" GridPane.rowIndex="2">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="7" GridPane.rowIndex="2">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="8" GridPane.rowIndex="2">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="3">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" GridPane.columnIndex="4" GridPane.rowIndex="3">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" GridPane.columnIndex="4" GridPane.rowIndex="3">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" GridPane.columnIndex="5" GridPane.rowIndex="3">
          <GridPane.margin>
-            <Insets left="32.0" />
-         </GridPane.margin>
-      </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" GridPane.columnIndex="5" GridPane.rowIndex="3">
-         <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
       <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" GridPane.columnIndex="6" GridPane.rowIndex="3">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" GridPane.columnIndex="7" GridPane.rowIndex="3">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" GridPane.columnIndex="7" GridPane.rowIndex="3">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" GridPane.columnIndex="3" GridPane.rowIndex="4">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" GridPane.columnIndex="8" GridPane.rowIndex="3">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" GridPane.columnIndex="4" GridPane.rowIndex="4">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" GridPane.columnIndex="4" GridPane.rowIndex="4">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" GridPane.columnIndex="5" GridPane.rowIndex="4">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" GridPane.columnIndex="5" GridPane.rowIndex="4">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="6" GridPane.rowIndex="4">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" GridPane.columnIndex="6" GridPane.rowIndex="4">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" GridPane.columnIndex="7" GridPane.rowIndex="4">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="7" GridPane.rowIndex="4">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="3" GridPane.rowIndex="5">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" GridPane.columnIndex="8" GridPane.rowIndex="4">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" GridPane.columnIndex="4" GridPane.rowIndex="5">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="4" GridPane.rowIndex="5">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" GridPane.columnIndex="5" GridPane.rowIndex="5">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" GridPane.columnIndex="5" GridPane.rowIndex="5">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
       <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" GridPane.columnIndex="6" GridPane.rowIndex="5">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" GridPane.columnIndex="7" GridPane.rowIndex="5">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" GridPane.columnIndex="7" GridPane.rowIndex="5">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="3" GridPane.rowIndex="6">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" GridPane.columnIndex="8" GridPane.rowIndex="5">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" GridPane.columnIndex="4" GridPane.rowIndex="6">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="4" GridPane.rowIndex="6">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" GridPane.columnIndex="5" GridPane.rowIndex="6">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" GridPane.columnIndex="5" GridPane.rowIndex="6">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="6" GridPane.rowIndex="6">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" GridPane.columnIndex="6" GridPane.rowIndex="6">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" GridPane.columnIndex="7" GridPane.rowIndex="6">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="7" GridPane.rowIndex="6">
          <GridPane.margin>
-            <Insets left="32.0" />
+            <Insets left="22.0" />
          </GridPane.margin>
       </Text>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Rullo!" textAlignment="CENTER" wrappingWidth="186.515625" GridPane.columnIndex="4">
+      <Text scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" GridPane.columnIndex="8" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="22.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Rullo!" textAlignment="CENTER" wrappingWidth="186.515625" GridPane.columnIndex="5">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9" textAlignment="CENTER" wrappingWidth="44.986328125" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="17" textAlignment="CENTER" wrappingWidth="45.40625" GridPane.columnIndex="5" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13" textAlignment="CENTER" wrappingWidth="45.40625" GridPane.columnIndex="6" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12" textAlignment="CENTER" wrappingWidth="46.40625" GridPane.columnIndex="7" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15" textAlignment="CENTER" wrappingWidth="46.40625" GridPane.columnIndex="8" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13" textAlignment="CENTER" wrappingWidth="46.40625" GridPane.columnIndex="9" GridPane.rowIndex="2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="16" textAlignment="CENTER" wrappingWidth="46.13671875" GridPane.columnIndex="9" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12" textAlignment="CENTER" wrappingWidth="46.13671875" GridPane.columnIndex="9" GridPane.rowIndex="4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="23" textAlignment="CENTER" wrappingWidth="46.13671875" GridPane.columnIndex="9" GridPane.rowIndex="5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" wrappingWidth="46.13671875" GridPane.columnIndex="9" GridPane.rowIndex="6">
+         <font>
+            <Font size="18.0" />
          </font>
       </Text>
    </children>

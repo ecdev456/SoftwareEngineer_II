@@ -1,9 +1,16 @@
 # SoftwareEngineer_II
 
-Project 3 Rullo:
-Recreate the C++ version of Rullo, to a Java version. Keeping mind the Observer pattern and the Model-View-Controller architecture.<br/>
+Project 3 Rullo conversion (C++ -> JavaFX): <br/>
+IDE's used: Eclipse and IntelliJ <br/>
 
-"Base" Folder: Contains old code written in C++ for Rullo. Working on Visual Studio <br/>
-"Current" Folder: Contains converted code to work in a Java IDE environment. <br/>
+Description:<br/>
+Recreate the C++ version of Rullo program developed in VS17 into JavaFX.<br/>
+<br/>
+User now will interact with a GUI to play Rullo, if the user wins they'll be notified.<br/>
+After completion the program will end unless the user decides that. <br/>
 
-Goal is to design the project to have GUI.
+"Rullo" Folder: C++ version of Rullo. <br/>
+"Current" Folder: JavaFx version of Rullo. <br/>
+
+If running into issues with C++ Rullo version. Head over [here](https://github.com/ecdev456/SoftwareEngineer) and follow that ReadME instructions. <br/>
+

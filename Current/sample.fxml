@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.Reflection?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
@@ -339,6 +340,36 @@
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" wrappingWidth="46.13671875" GridPane.columnIndex="9" GridPane.rowIndex="6">
          <font>
             <Font size="18.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Intrsuctions:" GridPane.rowIndex="1">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Add the sum correctly to win" wrappingWidth="144.12255859375" GridPane.rowIndex="2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Blue = Active number" GridPane.rowIndex="3">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Yellow = inActive number" GridPane.rowIndex="4">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Circle accessibleRole="RADIO_BUTTON" blendMode="MULTIPLY" fill="#ff371f" radius="15.0" stroke="BLACK" GridPane.columnIndex="12" GridPane.rowIndex="8">
+         <effect>
+            <Reflection />
+         </effect>
+      </Circle>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Done:" GridPane.columnIndex="11" GridPane.rowIndex="8">
+         <font>
+            <Font name="System Bold" size="13.0" />
          </font>
       </Text>
    </children>

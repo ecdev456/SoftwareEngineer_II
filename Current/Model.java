@@ -20,11 +20,11 @@ public class Model {
 				{ 2,9,6,6,7 },
 				{ 2,6,5,2,4 }
 			};
-	 static int hAct[] = {0,0,0,0,0}; //set to not finished
-	 static int vAct[]= {0,0,0,0,0}; //set to not finished
+	 static int hAct[] = {0,0,0,0,0}; // Keeps track if horizontal sums have been solved by user.
+	 static int vAct[]= {0,0,0,0,0}; // Keeps track if verticals sums have been solved by user.
 	
-	 static int hSum[] = {13,16,12,23,02};
-	 static int vSum[] = {9,17,13,12,15};
+	 static int hSum[] = {13,16,12,23,02};	//Keeps track of the sum wanted by the Horizontal values
+	 static int vSum[] = {9,17,13,12,15}; // Keeps track of the sum wanted by the Vertical values
 	
 	private static boolean HCheck[]; //size 5, boolean array where each is assigned true or false if valid mathematics for pertaining row.
 	private static boolean VCheck[]; //size 5, boolean array where each is assigned true or false if valid mathematics for pertaining column.
@@ -39,22 +39,21 @@ public class Model {
 			VCheck[i] = false;
 		}
 	}
-	boolean HPrint(int i) { return HCheck[i];}
-	boolean VPrint(int i) { return VCheck[i];}
+	boolean HPrint(int i) { return HCheck[i];} //Returns HCheck results for other testing.
+	boolean VPrint(int i) { return VCheck[i];} //Returns VCheck results for other testing.
 	
 	public static void CheckMath()
 	{
-		//Horizontal math checking.  Seperate 2-d array checking active/non-active values
-		//active values will be added and checked to the Final sum of that Row.
-		//Non-active will not be added.
+		// CheckMath: In charge of doing the Vertical and Horizontal math checking.
+		// Updates every checker when necessary, depending on when the user selects the numbers.
 		
-		int HSum = 0;
-		int JSum = 0;//This will be checking the neccessary sum with the current sum.(HSum gets only from active values)
+		int HSum = 0;	//Temp variable to keep the Horizontal Sum.
+		int JSum = 0;// Temp variable to keep the Vertical Sum.
 		
-		int j =0, col = 0; //in charge of the rows
-		boolean done = false;
+		int j =0, col = 0; //For the Rows.
+		boolean done = false;	// Math Checking initialized to not finished.
 		
-		while(!done)
+		while(!done)	//Loop to do Row and Col checking
 		{
 			for(int i = 0; i < 5;i++) 	//checking each spot on row, will later change row when 'j++' reached
 			{
@@ -90,7 +89,9 @@ public class Model {
 			j++;
 			col++;
 		}
-		System.out.println("Horizontal");	
+		
+		//Self Checking, can be removed later---------------------------------------
+	/*	System.out.println("Horizontal");	
 		for(int i = 0; i < 5;i++)
 		{
 			System.out.println(hAct[i]);
@@ -98,10 +99,11 @@ public class Model {
 		System.out.println("Vertical");
 		for(int i = 0; i < 5;i++)
 		{
-			System.out.println(vAct[i]);
-		}
+			System.out.println(vAct[i]); 
+		}*/
+		// Done self checking.---------------------------------
 	}
-	public static boolean CheckWin()
+	public static boolean CheckWin()	// Returns if user has won the game.
 	{
 		for (int i = 0; i < 5; i++)
 		{
@@ -110,7 +112,7 @@ public class Model {
 		}
 
 		//if reached this point then all are good
-		System.out.println( "Congradulations! You won the game!!");
+		//System.out.println( "Congradulations! You won the game!!");
 		return true;
 	}
 }

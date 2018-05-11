@@ -1,6 +1,10 @@
 package application;
 
+import java.util.Optional;
+
 import ecdev456.Model;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 //import javafx.event.ActionEvent;
 //import javafx.fxml.FXML;
 //import javafx.scene.control.Button;
@@ -12,20 +16,22 @@ import javafx.scene.shape.Circle;
 
 
 public class Controller {
-
-	static Model user;
+	
     //@FXML
     public void onClick(MouseEvent e)
     {
+    	
+    	
+    	//CH
         Circle c = (Circle) e.getSource();
-        String name = c.getId();
+        String name = c.getId();        
         switch(name){
             case "circle00":
                 if(Model.CheckActive(0,0) == 1)
                 {
                     c.setFill(Color.YELLOW);
                     Model.SetActive(0, 0, 0);// making it inactive
-                    System.out.println(Model.CheckActive(0,0));
+                //    System.out.println(Model.CheckActive(0,0));
                 }
                 else
                 {
@@ -326,15 +332,31 @@ public class Controller {
                 break;
         }
         
-        //Checking Math after every move is done
+        //CheckMath:  Will do the sum of both Horizontal and Vertical to test if sum is correct.
         Model.CheckMath();
         
-        //Here to check for win
+        //After CheckMath, CheckWin will check if User has managed to win the Rullo game.
        if(Model.CheckWin() == true)
        {
-    	   System.out.println("Hello Veronica");
+           Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+           alert .setTitle("Done!");
+           alert.setHeaderText("Hooray, you won Rullo");
+           alert.setContentText("Now go beat your time.");
+                   	
+           	//Creating option, if "Okay" close entire game, for user to restart
+           		//			, if "Cancel" go back to the game
+           	ButtonType Okay = new ButtonType("Okay");
+           	ButtonType Cancel = new ButtonType("Cancel");
+           	alert.getButtonTypes().setAll(Okay, Cancel);
+           	
+           	Optional<ButtonType> result = alert.showAndWait();
+if(result.get() == Okay) {
+	System.exit(0);
+}
        }
-       	}
+       
+
+   }
 
 }
 

@@ -3,6 +3,7 @@ This can be placed anywhere for user to see in the GUI
 
 
 Intstructions: 
+-Your goal is to remove numbers from the grid so that the remaining numbers in each row or column add up to the numbers next to that row or column. 
 -Add up the sum to the pertaining Horizontal/Vertical values.
 -Blue -> Active
 -Yellow -> Inactive
